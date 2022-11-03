@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>exercise 2</title>
+</head>
+<body>
+    <p></p>
+    <script>
+     
+     function print(num) {
+            console.log(num)
+        }
+
+
+        function printval(num, n){
+            for(let index = 0; index < num.length; index++){
+                if( index == n){
+                return num[index]
+            }
+        }
+        if (n >= num.length){
+            return `Sorry, no value in the array for index number: ${n} `
+        }
+
+   }   
+
+   print(printval([1, 2, 6, 8, 16], 4))   
+     
+    </script>
+    
+</body>
+</html>

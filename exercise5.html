@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>exercise 5</title>
+</head>
+<body>
+    <p></p>
+    <script>
+     let x = 0
+     function Getme(arr, num) {
+           for (i=0; i < arr.length; i++) {
+            if (num == arr[i]) {
+                 x++
+            }
+        
+           }
+        if (x > 0) { 
+
+            return 'found';
+        }
+        else {
+
+            return 'not found';
+        }
+        }
+
+        console.log(Getme([2, 6, 8, 9, 5, 3],6))
+  
+    </script>
+    
+</body>
+</html>

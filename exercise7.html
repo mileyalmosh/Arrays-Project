@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>exercise 7</title>
+</head>
+<body>
+    <script>
+        function PR(arr) { 
+            console.log(arr)
+        }
+        
+
+        function Checkif(arr){
+            let i = 0;
+            for( i = 0; i < arr.length; i++){
+                if(arr[i] >= 50){
+                    break;
+                }
+            }
+            if (i == arr.length ){
+                return 'smaller than 50';
+            }
+            
+            i = 0;
+            for(i = 0; i < arr.length; i++){
+                if(arr[i] >= 51 && arr[i] <= 100){
+                    break;
+                }
+            }
+            if (i == arr.length ){
+                return 'between 51 to 100';
+            }
+
+            i = 0;
+            for(i = 0; i < arr.length; i++){
+                if(arr[i] >= 101 && arr[i] <= 200){
+                    break;
+                }
+            }
+            if (i == arr.length ){
+                return 'between 101 to 200';
+            }
+
+            i = 0;
+            for(i = 0; i < arr.length; i++){
+                if(arr[i] >= 201){
+                    break;
+                }
+            }
+            if (i == arr.length ){
+                return 'greater than 201';
+            }
+
+            return 'No condition is happening'
+        }
+ 
+   console.log((Checkif([1,2,3,4,5,6])))  
+    </script>
+    
+</body>
+</html>

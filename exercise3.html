@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>exercise 3</title>
+</head>
+<body>
+    <p></p>
+    <script>
+     
+     function ifodds(arr,count) { 
+        for(let i = 0; i < arr.length; i++ ) { 
+            if(arr[i] % 2 != 0)  {
+                count++
+
+            }
+        }
+        if (count === arr.length) { 
+            return 'odds'; 
+
+        }
+        if (count != arr.length) { 
+            return 'not odds'; 
+
+        }
+
+     }
+
+     console.log(ifodds([1, 2, 8, 5, 15],0))
+  
+    </script>
+    
+</body>
+</html>
